@@ -1,0 +1,258 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500&display=swap');
+
+/* common style and utilities */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;  
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* header style  */
+.header-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 87px;
+    margin-left: 100px;
+    color: #3A3A3A;
+}
+
+/* influencer style  */
+.influencer{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.influencer-details{
+margin-top: 10px;
+}
+.influencer-title{
+    font-size: 52px;
+    color: #3A3A3A;
+}
+.align-justify{
+    text-align: justify;
+}
+.description{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.btn-color{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 15px 40px;
+    border-radius: 41px;
+    color: #FFFFFF; ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.fa-arrow-right{
+    color: #FFFFFF; ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.influencer-banner{
+margin-left: 119px;
+
+}
+
+.influencer-banner:hover img{
+    transform: rotate(45deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* popular collection */
+.popular-collection{
+    width: 85%;
+    margin: 0 auto;
+    
+
+    
+}
+.collections{
+    background-color: rgba(170, 170, 170, .1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 15px;
+    margin: 50px;
+  
+}
+.collection{
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+}
+.image img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.title{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+
+}
+.price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.rating{
+    color: #FB8200;
+}
+.rating span{
+   color:#5E6366;
+}
+.comment{
+    color: #787885;
+}
+.relative{
+    position: relative;
+    left: 800px;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 41px;
+    
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.relative i{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* last section  */
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: orange;
+    border-radius: 15px 150px 15px 150px;
+    transition: border-radius 1s;
+}
+.box:hover{
+    border-radius: 150px 15px 150px 15px;
+}
+/* footer style  */
+.footer{
+    background-color: #0A0826;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.copy{
+    font-size: 14px;
+    font-weight: bold;
+    color: #D9DBE1;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 176px;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.icon a i{
+
+   margin: 0 16px;
+   color: #FFFFFF;
+   background-color: rgba(170, 170, 170,.1);
+   border: 10px solid rgba(170, 170, 170,.1);
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+ /* media query */
+/* media query for mobiles */
+@media only screen and (max-width:688px) {
+    .header-title{
+        text-align: center;
+    }
+    .influencer, .collections{
+        grid-template-columns: 1fr;
+        margin: 20px;
+        text-align: center;
+        
+        
+    }
+    .influencer-banner{
+        margin-left: 0;
+        margin-top: 100px;
+        
+    }
+    .relative{
+        position: relative;
+        left: 100px;
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 41px;
+        color: rgba(224, 44, 109, 0.87);
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+    .relative i{
+        color: rgba(224, 44, 109, 0.87);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+  }
+
+  /* media query for Tablets */
+  @media (min-width: 689px) and (max-width: 991px) {
+    .header-title{
+        text-align: center;
+    }
+    .influencer, .collections{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+   .influencer-banner{
+     margin-top: 250px;
+
+     }
+    .relative{
+        position: relative;
+        left: 100px;
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 41px;
+        color: rgba(224, 44, 109, 0.87);
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+    .relative i{
+        color: rgba(224, 44, 109, 0.87);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+  }
