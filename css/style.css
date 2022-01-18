@@ -132,19 +132,37 @@ margin-left: 119px;
     font-weight: bold;
 }
 
-/* last section  */
+/* ==================
+    contact form css 
+ ======================*/
+ .contact-form {
+    text-align: center;
+    background-color: rgb(153, 164, 172);
+    border-radius: 10px;
+    padding-bottom: 50px;
+    margin: 0 auto;
 
-
-.box{
-    width: 300px;
-    height: 300px;
-    margin: 100px auto;
-    background-color: orange;
-    border-radius: 15px 150px 15px 150px;
-    transition: border-radius 1s;
 }
-.box:hover{
-    border-radius: 150px 15px 150px 15px;
+.name-field {
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 30px;
+    border: 2px solid rgb(25, 116, 66);
+    margin-bottom: 20px;
+}
+.age-area {
+    margin-bottom: 20px;
+}
+.btn {
+    margin-top: 30px;
+    padding: 20px 40px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
 }
 /* footer style  */
 .footer{
